@@ -364,9 +364,9 @@ $(function(){
 		var color_add;
 		var url_add;
 		if($('.header, .header-con').width()>1063){
-			topminus = 249;
+			topminus = 260;
 		}else{
-			topminus = 249;
+			topminus = 260;
 			top_mobile = 130;
 		};
 		// $language.removeClass('on');
