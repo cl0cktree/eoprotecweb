@@ -364,10 +364,19 @@ $(function(){
 		var color_add;
 		var url_add;
 		if($('.header, .header-con').width()>1063){
-			topminus = 260;
+			if (art_index==1){
+				topminus = 0;
+			}else{
+				topminus = 110;
+			}
 		}else{
-			topminus = 260;
-			top_mobile = 130;
+			if (art_index==1){
+				topminus = 0;
+				top_mobile = 0;
+			}else{
+				topminus = 110;
+				top_mobile = 110;
+			}
 		};
 		// $language.removeClass('on');
 		// $('.gnb-wrap, .gnb-modile').find('a').removeClass('on');
@@ -411,7 +420,7 @@ $(function(){
 				}
 				$(this).siblings('.depth_wrap').children('li:eq(0)').children('a').addClass(color_add);
 				// history.pushState(null,null,fixability_url+'/#mark_'+gnb_index+'_1');
-				$('body, html').stop().animate({ scrollTop: $('.article_'+art_index).find('.contents').find('.slogan-box').offset().top-topminus },300);
+				$('body, html').stop().animate({ scrollTop: $('.article_'+art_index).offset().top-topminus },300);
 			}else{
 				var sub_index= $(this).parent('li').data('index');
 				var split_sub = sub_index.split('_');
@@ -455,10 +464,6 @@ $(function(){
 		// history.pushState(null,null,fixability_url+'index.html/'+url_add);
 	});
 	//----------------------------------
-	//-----외부컨탠츠 가져오기------------
-		// var bell_sum = 'http://webmail.fixability.co.kr/admin/mail_adminBoardList.php?bbsType=B&bbsManageIdx=14 #contents'
-		// $('.board_ceo').load(bell_sum);
-	//-----------------------------------
 	//-----footer 클릭시 각 동작 모음----
 	$name_footer.find('.terms').on('click','a',function(){
 		var datasum;
@@ -490,40 +495,6 @@ $(function(){
 		}else{
 			alert('모바일에서만 가능합니다.');
 		}
-	});
-	if (($('.greeting').find('.qna-board'))&&($('.greeting').find('.qna-board-mobile'))){
-		$('.qna-board').append('<ul class="qbox-wrap"></ul><ul class="abox-wrap"></ul>');
-		$('.qna-board-mobile').append('<ul class="qbox-wrap"></ul>');
-		Creat_qalist();
-	}
-	function Creat_qalist(){
-		var faq_data = './data/faq_data.json';
-		$.getJSON(faq_data, function(data){
-			$.each(data, function(I, item){
-				$('.qna-board').find('.qbox-wrap').append('<li class="qlist_'+item.idx+' on" data-list="'+item.idx+'"><a href="javascript:;">'+item.title+'</a></li>');
-				$('.qlist_0').css({'display':'none'});
-				$('.qna-board').find('.abox-wrap').append('<li class="alist_'+item.idx+'" data-list="'+item.idx+'"><ul><li class="faq_title">'+item.title+'</li><li class="faq_word">'+item.content+'</li></ul></li>');
-				$('.qna-board').find('.alist_0').html('<span>좌측의 질문을<br>선택해주세요<br></span>');
-				$('.qna-board').find('.alist_0').addClass('on');
-				$('.qna-board-mobile').find('.qbox-wrap').append('<li class="qlist_'+item.idx+' on" data-list="'+item.idx+'"><a href="javascript:;">'+item.title+'</a><ul class="abox"><li class="faq_title">'+item.title+'</li><li class="faq_word">'+item.content+'</li></ul></li>');
-				$('.qna-board-mobile').find('.qbox-wrap').children('.qlist_0, .alist_0').css({'display':'none'});
-			});
-		});
-	};
-	$('.qbox-wrap').on('click','a',function(){
-		var q_index=$(this).parent('li').data('list');
-		$('.qbox-wrap').find('li').removeClass('on');
-		$('.qlist_'+q_index).addClass('on');
-		$('.abox-wrap').children('li').removeClass('on');
-		$('.abox-wrap').find('.alist_'+q_index).addClass('on');
-		$('.abox').removeClass('on');
-		$('.qlist_'+q_index).find('.abox').addClass('on');
-		console.log(q_index);
-	});
-	//----------------------------------
-	$('.kakao_consulting, .kakao_consulting_mobile').on('click',function(){
-		window.location.href = 'https://pf.kakao.com/_gIxbUK'; //채팅보다 채널추가가 우선일 경우 적용.
-		// window.location.href = 'https://pf.kakao.com/_gIxbUK/chat'; //채널추가보다 채팅이 우선일 경우 적용.
 	});
 	return false;
 });
