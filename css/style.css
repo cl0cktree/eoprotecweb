@@ -184,8 +184,8 @@ textarea{box-sizing:border-box;}
 .footer .address span a{cursor:pointer;}
 .footer .address span a:hover{text-decoration:underline;}
 
-.footer .copyright{display:none;padding:0px 30px 30px;word-break:keep-all;}
-.footer .copyright span{display:block;box-sizing:border-box;width:fit-content;border-left:0px solid #fff;margin-right:10px;float:left;padding-left:10px;color:#fff;float:left;}
+.footer .copyright{display:block;padding:0px 30px 30px;word-break:keep-all;}
+.footer .copyright span{display:block;box-sizing:border-box;width:fit-content;border-left:0px solid #fff;margin-right:10px;padding-left:10px;color:#fff;float:none;}
 
 .terms-modal{position:relative;min-height:100vh;background:#fff;margin:0px auto;cursor:default;overflow:hidden;overflow-y:scroll;z-index:20;}
 .terms-modal .detailed{width:92%;margin:60px auto;}

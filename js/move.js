@@ -388,7 +388,6 @@ $(function(){
 		else if(gnb_index=='5'){
 			window.location.href = './faq.html';
 		}else{
-			console.log(split_url);
 			if (((String(gnb_index).length==1)&&(split_url=='consulting.html'))||((String(gnb_index).length==1)&&split_url=='faq.html')){
 				if (gnb_index=='1'){
 					color_add = 'color_blue';
