@@ -371,11 +371,11 @@ $(function(){
 			}
 		}else{
 			if (art_index==1){
-				topminus = 0;
-				top_mobile = 0;
+				topminus = 60;
+				top_mobile = 60;
 			}else{
-				topminus = 110;
-				top_mobile = 110;
+				topminus = 90;
+				top_mobile = 90;
 			}
 		};
 		// $language.removeClass('on');

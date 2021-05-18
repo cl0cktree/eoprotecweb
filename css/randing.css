@@ -28,11 +28,11 @@
 .randing-wrap .randing-container .message-background .nav_btn_4{margin-top:44px;}
 
 /*-------------------------------------모바일---------------------------------------*/
-.randing-wrap .randing-container .message-background-mobile{width:100%;min-height:380px;background:rgba(0,0,0,0.7);padding:70px 0;}
+.randing-wrap .randing-container .message-background-mobile{width:100%;background:rgba(0,0,0,0.7);padding:60px 0;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap{width:100%;height:auto;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap>div{width:100%;min-height:44px;color:#f3f3f3;word-break:keep-all;text-align:center;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap{width:100%;min-height:60px;/*background:rgba(23,28,97,0.5);*/text-align:center;color:#f3f3f3;}
-.randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap img{max-width:400px;width:80%;float:none;}
+.randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap img{max-width:300px;width:50%;float:none;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap span{display:block;box-sizing:border-box;width:100%;min-height:60px;text-align:center;opacity:0;z-index:0;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap .catch-1{word-spacing:0px;}
 .randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap .catch-2{word-spacing:0px;}
@@ -40,13 +40,14 @@
 .randing-wrap .randing-container .message-background-mobile .message-wrap .catch-wrap .catch-4{word-spacing:0px;}
 
 .randing-wrap .randing-container .message-background-mobile .message-wrap .message{display:none;opacity:0;z-index:0;text-align:center;margin-top:0px;}
-.randing-wrap .randing-container .message-background-mobile .randing-nav{width:100%;max-width:250px;margin:20px auto 0;overflow:hidden;}
-.randing-wrap .randing-container .message-background-mobile .nav_btn{display:block;width:100%;color:#f3f3f3;margin-top:20px;text-decoration:none;text-align:center;float:left;}
+.randing-wrap .randing-container .message-background-mobile .randing-nav{width:100%;margin:20px auto 0;overflow:hidden;}
+.randing-wrap .randing-container .message-background-mobile .nav_btn{display:block;width:33%;color:#f3f3f3;margin-top:20px;text-decoration:none;text-align:center;float:left;}
 
 @media all and (max-width:320px){
 	.randing-wrap .randing-container .message-background{display:none;}
 	.randing-wrap .randing-container .message-background .catch-wrap{font-size:35px;font-weight:700;}
 	.randing-wrap .randing-container .message-background .message{width:320px;font-size:16px;line-height:27px;}
+	.randing-wrap .randing-container .message-background-mobile .randing-nav{max-width:240px;}
 	.randing-wrap .randing-container .message-background-mobile .nav_btn{font-size:17px;}
 
 	.randing-wrap .randing-container .message-background-mobile{display:block;}
@@ -59,6 +60,7 @@
 	.randing-wrap .randing-container .message-background{display:none;}
 	.randing-wrap .randing-container .message-background .catch-wrap{font-size:35px;font-weight:700;}
 	.randing-wrap .randing-container .message-background .message{width:360px;font-size:16px;line-height:27px;}
+	.randing-wrap .randing-container .message-background-mobile .randing-nav{max-width:250px;}
 	.randing-wrap .randing-container .message-background-mobile .nav_btn{font-size:17px;}
 
 	.randing-wrap .randing-container .message-background-mobile{display:block;}
@@ -70,6 +72,7 @@
 	.randing-wrap .randing-container .message-background{display:none;}
 	.randing-wrap .randing-container .message-background .catch-wrap{font-size:42px;font-weight:700;}
 	.randing-wrap .randing-container .message-background .message{width:400px;font-size:18px;line-height:30px;}
+	.randing-wrap .randing-container .message-background-mobile .randing-nav{max-width:280px;}
 	.randing-wrap .randing-container .message-background-mobile .nav_btn{font-size:17px;}
 
 	.randing-wrap .randing-container .message-background-mobile{display:block;}
@@ -85,6 +88,7 @@
 	.randing-wrap .randing-container .message-background-mobile{display:block;}
 	.randing-wrap .randing-container .message-background-mobile .catch-wrap{font-size:42px;font-weight:700;}
 	.randing-wrap .randing-container .message-background-mobile .message{width:400px;font-size:15px;line-height:30px;}
+	.randing-wrap .randing-container .message-background-mobile .randing-nav{max-width:300px;}
 	.randing-wrap .randing-container .message-background-mobile .nav_btn{font-size:20px;}
 }
 @media all and (min-width:721px) and (max-width:1080px){
@@ -95,6 +99,7 @@
 	.randing-wrap .randing-container .message-background-mobile{display:block;}
 	.randing-wrap .randing-container .message-background-mobile .catch-wrap{font-size:42px;font-weight:900;}
 	.randing-wrap .randing-container .message-background-mobile .message{width:450px;font-size:15px;line-height:30px;}
+	.randing-wrap .randing-container .message-background-mobile .randing-nav{max-width:350px;}
 	.randing-wrap .randing-container .message-background-mobile .nav_btn{font-size:20px;}
 }
 @media all and (min-width:1081px) and (max-width:1280px){
